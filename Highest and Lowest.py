@@ -1,7 +1,6 @@
 def high_and_low(numbers):
-    ls = numbers.split(" ")
-    ls = [int(i) for i in ls ]
-    return str(max(ls)) + " " +  str(min(ls))
+    ls = [int(s) for s in numbers.split(" ")]
+    return "%i %i" % (max(ls),min(ls))
 
 
 print(high_and_low("4 5 29 54 4 0 -214 542 -64 1 -3 6 -6"))  # return "542 -214"
